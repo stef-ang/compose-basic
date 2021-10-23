@@ -74,8 +74,10 @@ fun BodyContent(modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Text(text = "Hi there!")
         Text(text = "Thanks for going through the Layouts codelab")
-        PhotographerCard()
-        ButtonWithSlot()
+        repeat(3) {
+            PhotographerCard()
+            ButtonWithSlot()
+        }
     }
 }
 
